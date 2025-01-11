@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Selection App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Product Selection App</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Select</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Discount (%)</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody id="productTable">
+                <!-- Rows will be populated by JavaScript -->
+            </tbody>
+        </table>
+
+        <button onclick="calculateTotal()">Calculate Total Price</button>
+
+        <h2 id="result"></h2>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
